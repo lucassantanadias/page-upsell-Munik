@@ -1,0 +1,223 @@
+/* Estilos gerais */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffebf3; /* Fundo rosa claro */
+    color: #5a003c; /* Tom de rosa escuro para contraste */
+    text-align: center;
+}
+
+/* Barra de alerta */
+.alert-bar {
+    background-color: #ff4081; /* Rosa vibrante */
+    color: white;
+    padding: 10px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+/* Contêiner principal */
+.container {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #ffe3ed; /* Fundo suave para destacar a seção */
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(255, 105, 180, 0.2);
+}
+
+/* Barra de progresso */
+.progress-container {
+    background-color: #ffc1de; /* Tom de rosa pastel */
+    padding: 15px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.progress-bar {
+    width: 100%;
+    background-color: #ffe0f0;
+    height: 8px;
+    border-radius: 5px;
+    margin-top: 5px;
+    position: relative;
+}
+
+.progress {
+    width: 95%;
+    height: 100%;
+    background-color: #ff4081; /* Rosa vibrante */
+    border-radius: 5px;
+}
+
+/* Texto da barra de progresso */
+#progress-text {
+    display: block;
+    margin-top: 5px;
+    font-size: 20px;
+    color: #5a003c;
+}
+
+/* Texto de alerta */
+.warning-text {
+    font-size: 20px;
+    margin-bottom: 25px;
+    color: #880e4f; /* Tom de rosa escuro */
+}
+
+/* Título principal */
+h1 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 60px;
+    color: #d81b60; /* Rosa médio para destacar o título */
+}
+
+/* Vídeo */
+.video-container {
+    position: relative;
+    width: 100%;
+    max-width: 600px;
+    margin: auto;
+    background-color: #ffccd5; /* Fundo rosa suave */
+    border-radius: 10px;
+    padding: 10px;
+}
+
+video {
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* Botão de play */
+.play-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(255, 64, 129, 0.8);
+    color: white;
+    font-size: 50px;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.play-button:hover {
+    background-color: rgba(255, 64, 129, 1);
+}
+
+/* Ocultar botão quando vídeo for reproduzido */
+.video-container.playing .play-button {
+    display: none;
+}
+
+/* Responsividade */
+
+/* Ajustes para tablets */
+@media (max-width: 1024px) {
+    .container {
+        max-width: 90%;
+        margin: 30px auto;
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 22px;
+        margin-top: 50px;
+    }
+
+    .progress-container {
+        padding: 10px;
+    }
+
+    #progress-text {
+        font-size: 18px;
+    }
+}
+
+/* Ajustes para smartphones */
+@media (max-width: 768px) {
+    .container {
+        max-width: 95%;
+        margin: 20px auto;
+        padding: 15px;
+        border-radius: 8px;
+    }
+
+    .alert-bar {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    h1 {
+        font-size: 20px;
+        margin-top: 40px;
+    }
+
+    .progress-container {
+        padding: 10px;
+    }
+
+    #progress-text {
+        font-size: 16px;
+    }
+
+    .video-container {
+        max-width: 100%;
+        padding: 5px;
+    }
+
+    .play-button {
+        font-size: 40px;
+        width: 60px;
+        height: 60px;
+    }
+}
+
+/* Ajustes para telas muito pequenas (smartphones menores, até 480px) */
+@media (max-width: 480px) {
+    .alert-bar {
+        font-size: 12px;
+        padding: 6px;
+    }
+
+    h1 {
+        font-size: 18px;
+        margin-top: 30px;
+    }
+
+    .warning-text {
+        font-size: 16px;
+        margin-bottom: 20px;
+    }
+
+    .progress-container {
+        padding: 8px;
+    }
+
+    .progress-bar {
+        height: 6px;
+    }
+
+    #progress-text {
+        font-size: 14px;
+    }
+
+    .video-container {
+        max-width: 100%;
+        padding: 5px;
+    }
+
+    .play-button {
+        font-size: 35px;
+        width: 50px;
+        height: 50px;
+    }
+}

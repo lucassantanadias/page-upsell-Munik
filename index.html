@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Página de Oferta Especial</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="alert-bar">ATENÇÃO: NÃO FECHE ESTA PÁGINA!</div>
+
+    <div class="container">
+      <div class="progress-container">
+        <p><strong>Espere!</strong> Sua compra ainda não está completa.</p>
+        <div class="progress-bar">
+          <div class="progress" id="progress"></div>
+        </div>
+        <span id="progress-text">95%</span>
+      </div>
+
+      <p class="warning-text">
+        Assista com atenção ao vídeo abaixo, pois esta página só estará
+        disponível uma vez, e sair dela pode causar um erro em seu pedido.
+      </p>
+
+      <h1>
+        Descubra como fazer dinheiro rápido através da internet e acelere ainda
+        mais os seus resultados
+      </h1>
+
+      <div class="video-container">
+        <video id="video" controls>
+          <source src="seu-video.mp4" type="video/mp4" />
+          Seu navegador não suporta vídeos.
+        </video>
+        <div class="play-button" onclick="playVideo()">&#9658;</div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
